@@ -1,0 +1,17 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>VueJS Keyboard Events </title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1> Eventos do teclado </h1>
+		<label>Nome:</label>
+		<input type="text" @keyup.enter="logName"/>
+		<label>Idade:</label>
+		<input type="text" @keyup.alt.enter="logIdade"/>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

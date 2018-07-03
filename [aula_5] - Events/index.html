@@ -1,0 +1,18 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Teste VueJS</title>
+</head>
+<body>
+	<div id="vue-app">
+		<h1>Eventos</h1>
+		<button @click="add(1)">Add 1 Ano</button>
+		<button v-on:click="subtract(1)">Sub 1 Ano</button>
+		<button @dblclick="add(10)">Add 10 anos</button>
+		<button v-on:dblclick="subtract(10)">Sub 10 anos</button>
+		<p> Idade = {{ idade }} </p>
+		<div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>

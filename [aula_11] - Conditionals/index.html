@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Teste VueJS</title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			<h1>Teste Conditionals</h1>
+			<button v-on:click="error = !error">Botão Erro</button>
+			<button v-on:click="success = !success">Botão OK</button>
+			
+			<p v-show="error">Deu erro :(</p>
+			<p v-show="success">Deu certo :)</p>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

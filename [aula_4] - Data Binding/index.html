@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Teste VueJS</title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="vue-app">
+			<h1>Usando Data Binding</h1>
+			<a v-bind:href="website">Portal de Busca</a>
+			<input type="text" v-bind:value="job"/>
+			<p v-html="websiteTag"></p>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

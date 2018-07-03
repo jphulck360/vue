@@ -1,0 +1,37 @@
+<!-- 
+	Exemplo de uso de diretivas
+-->
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+</head>
+	
+<body>
+	<div id="app">
+		<h1>{{titulo}}</h1>
+		<div v-if="usuario.nome != ''">
+			ID: {{ usuario.id }}<br>
+			Nome: {{ usuario.nome }}
+		</div>
+		<div v-else>Usuário não encontrado.</div> 
+	</div>
+	
+	<script src="https://unpkg.com/vue"></script>
+	
+	<script>
+		var app = new Vue({
+			el: "#app",
+			data: {
+				titulo: "Testando VueJS!",
+				usuario: {
+					id: 1,
+					nome: "João"
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>
