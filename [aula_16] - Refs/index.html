@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Teste VueJS</title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+	
+		<div id="vue-app">
+			<h3> Usando REFS </h3>
+			<input type="text" ref="input" />
+			<button v-on:click="readRefs">Enviar</button>
+			<p>Comida = {{ output }} </p>
+			<div ref="test">Teste</div>
+		</div>
+		
+		<script src="app.js"></script>
+	</body>
+</html>
