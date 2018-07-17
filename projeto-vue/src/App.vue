@@ -1,21 +1,29 @@
 <template>
 	<div>
 		<h1>{{ title }}</h1>
-		<p>{{ saudacao }}</p>
+		<ninjas></ninjas>
 	</div>
 </template>
 
 <script>
+
+import Ninjas from './Ninjas.vue'
+
 export default{
+	components: {
+		'ninjas': Ninjas
+	},
 	data(){
 		return{
-			title: 'Teste Vue 1...'
-		}
-	},
-	methods:{
-		saudacao: function(){
-			return 'E aee!';
+			title: 'Test Warrior App...'
 		}
 	}
 }
+
 </script>
+
+<style scoped>
+h2{
+	color: blue;
+}
+</style>
